@@ -1,0 +1,8 @@
+{% extends 'blog/base.html'%}
+{% block content %}
+<h1>News Articles</h1>
+{% for news_article in news_articles %}
+    <h2><a href="{% url 'news_detail' news_article.id %}">{{ news_article.title }}</a></h2>
+    <p>{{ news_article.pub_date }}</p>
+{% endfor %}
+{% endblock %}

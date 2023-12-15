@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+
+
+{% block content %}
+
+<h2>{{ magazine.title }}</h2>
+<img src="{{ magazine.cover_image.url }}" alt="{{ magazine.title }}">
+<p>{{ magazine.description }}</p>
+<a href="{{ magazine.pdf_file.url }}" target="_blank">View PDF</a>
+
+{% endblock %}
+
+
+
+
+
+

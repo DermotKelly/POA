@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row gx-5">
+        {% for magazine in magazines %}
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="card h-100">
+                <img src="{{ magazine.cover_image.url }}" alt="{{ magazine.title }}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ magazine.title }}</h5>
+                    <p class="card-text">{{ magazine.description }}</p>
+                    <a href="{% url 'magazine_detail' magazine.id %}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
