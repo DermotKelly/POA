@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 from django.core.management.utils import get_random_secret_key
 from pathlib import Path
+import dj_database_url
 import os
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -30,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure-8@9md)c*4v!t$!4q$%olfb53y_k4d5#p7-(1gydk(!zwkwpn1@'
-SECRET_KEY = os.getenv('DJANOG_SECRTE_KEY', get_random_secret_key())
+SECRET_KEY = os.getenv('DJANOG_SECRET_KEY', get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #os.getenv('DEBUG','False')
@@ -88,12 +89,13 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
-    #'default': {
-       # 'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-  #  }
-#}
+DATABASES = {
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    }
+
+
+
+
 
 SECRET_KEY="7ecc9060baa433dd152cd5e05562e3e72807b43b"
 DATABASE="postgresql://poa_k848_user:cQJCtVPGUHGuKUr57IdWLVYfjFjuuz0G@dpg-clubbk7qd2ns73aa4hc0-a.oregon-postgres.render.com/poa_k848"
