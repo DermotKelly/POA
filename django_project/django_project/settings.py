@@ -35,7 +35,7 @@ SECRET_KEY = os.getenv('DJANOG_SECRET_KEY', get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #os.getenv('DEBUG','False')
-ALLOWED_HOSTS = ('127.0.0.1,localhost','poa-ngi7.onrender.com')
+ALLOWED_HOSTS = ('127.0.0.1','localhost','poa-ngi7.onrender.com')
 
 
 # Application definition
@@ -89,16 +89,11 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-    }
-
-
-
-
 
 SECRET_KEY="7ecc9060baa433dd152cd5e05562e3e72807b43b"
-DATABASE="postgresql://poa_k848_user:cQJCtVPGUHGuKUr57IdWLVYfjFjuuz0G@dpg-clubbk7qd2ns73aa4hc0-a.oregon-postgres.render.com/poa_k848"
+
+DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///db.sqlite3')
+DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
