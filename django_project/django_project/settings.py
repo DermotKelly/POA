@@ -21,7 +21,6 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_USER') # Login email address, Stored as 
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS') #App Password set from gmail, Stored as an environment varaible
 
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -89,13 +88,15 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+    #'default': {
+       # 'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+  #  }
+#}
 
+SECRET_KEY="7ecc9060baa433dd152cd5e05562e3e72807b43b"
+DATABASE="postgresql://poa_k848_user:cQJCtVPGUHGuKUr57IdWLVYfjFjuuz0G@dpg-clubbk7qd2ns73aa4hc0-a.oregon-postgres.render.com/poa_k848"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
