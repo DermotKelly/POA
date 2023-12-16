@@ -65,3 +65,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
+
+def slider(request):
+    return render(request, 'blog/slider.html', {'title': 'Slider'})

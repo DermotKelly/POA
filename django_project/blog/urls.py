@@ -18,4 +18,5 @@ urlpatterns = [
     path('post/<int:pk>/update/', PostUpdateView.as_view(), name='post-update'),
     path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post-delete'), # Added in new url pattern
     path('about/',views.about, name='blog-about'),
+    path('slider/',views.slider, name='blog-slider'),
 ]
