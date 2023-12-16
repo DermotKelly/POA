@@ -29,10 +29,11 @@ ul {
 }
 
 .content-section {
-  background: #ffffff;
+  background: #224a7e;
   padding: 10px 20px;
+  color: #b5a168;
   border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 30px;
   margin-bottom: 20px;
 }
 
@@ -82,3 +83,7 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.bg-body-tertiary{
+background-color: #224a7e;
+} 
