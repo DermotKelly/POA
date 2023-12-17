@@ -94,3 +94,9 @@ color:#b5a168;
 a.text-body{
   color: #b5a168;
 }
+
+.btn-outline-info {
+  color: #b5a168;
+  background-color: transparent;
+  background-image: none;
+  border-color: #b5a168;
