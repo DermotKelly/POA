@@ -85,5 +85,10 @@ a.article-title:hover {
 }
 
 .bg-body-tertiary{
-background-color: #224a7e;
+background-color: #5e8cc9;
+color:#b5a168;
 } 
+
+a.text-body{
+  color: #b5a168;
+}
