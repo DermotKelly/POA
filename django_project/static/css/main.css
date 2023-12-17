@@ -40,11 +40,11 @@ ul {
 }
 
 .article-title {
-  color: #444444;
+  color: #b5a168;
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -100,3 +100,10 @@ a.text-body{
   background-color: transparent;
   background-image: none;
   border-color: #b5a168;
+
+.small-text-muted{}
+
+
+.list-group-item-light {
+  color: #ffffff;
+  background-color: #b5a168;}
