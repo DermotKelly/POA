@@ -106,3 +106,9 @@ a.text-body{
   color: #ffffff;
   background-color: #b5a168;
 }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #b5a168;
+  border-color: #ffffff;
+}
