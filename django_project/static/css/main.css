@@ -119,3 +119,9 @@ a.text-body{
   background-color: #b5a168;
   border-color: #ffffff;
 }
+
+a {
+  color: #ffffff;}
+
+a:hover {
+    color: #b5a168;}
