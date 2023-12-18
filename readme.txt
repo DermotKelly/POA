@@ -14,8 +14,14 @@ I built the core backend functionalities such as user management and data storag
     • Allows users to update their personal and contact details.
     • Email-based recovery for forgotten passwords.
 
+Created CRUD funcionality where users can create, read, update and delete post on blog
+
+Create a Magazine archive where logged in users can access magazines.
+
+Create public news feed
+
 Phase 4
-I designed the frontend using HTML templates, inheritance, enhancing the look with Bootstrap, and integrating JavaScript-driven functionalities.
+I designed the frontend using HTML templates, incorporated inheritance, enhancing the look with Bootstrap, and integrating CSS and JavaScript-driven functionalities.
 
 Phase 5
 
@@ -23,3 +29,4 @@ I tested for functionality, responsiveness, and security.
 
 Phase 6
 I ensured my application was successfully hosted via render and functioning correctly.
+The URL Address for this project is https://poa-ngi7.onrender.com
