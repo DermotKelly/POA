@@ -9,10 +9,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ['EMAIL_USER'] # Login email address, Stored as an environment varaible
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS'] #App Password set from gmail, Stored as an environment varaible
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS') #App Password set from gmail, Stored as an environment varaible
-#EMAIL_HOST_USER = os.environ.get('EMAIL_USER') # Login email address, Stored as an environment varaible
+#EMAIL_HOST_USER = os.environ['EMAIL_USER'] # Login email address, Stored as an environment varaible
+#EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS'] #App Password set from gmail, Stored as an environment varaible
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS') #App Password set from gmail, Stored as an environment varaible
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER') # Login email address, Stored as an environment varaible
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 # Database Setup
 
-SECRET_KEY="7ecc9060baa433dd152cd5e05562e3e72807b43b"
+SECRET_KEY= os.environ.get('DJANGO_SECRET_KEY')
 DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///db.sqlite3')
 DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
