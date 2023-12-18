@@ -33,18 +33,18 @@ ul {
 .content-section {
   background: #224a7e;
   padding: 10px 20px;
-  color: #b5a168;
+  color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 30px;
   margin-bottom: 20px;
 }
 
 .article-title {
-  color: #b5a168;
+  color: #ffffff;
 }
 
 a.article-title:hover {
-  color: #ffffff;
+  color: #b5a168;
   text-decoration: none;
 }
 
@@ -61,11 +61,12 @@ a.article-title:hover {
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3;
+  color: #ffffff;
 }
 
 .article-metadata a:hover {
-  color: #333;
+  color: #b5a168;
   text-decoration: none;
 }
 
