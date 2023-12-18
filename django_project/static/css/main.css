@@ -125,3 +125,15 @@ a {
 
 a:hover {
   text-decoration: underline;}
+
+.btn-danger{
+  color: #ffffff;
+  background-color: #b5a168;
+  border-color: #ffffff;
+}
+
+.btn-secondary{
+  color: #ffffff;
+  background-color: #b5a168;
+  border-color: #ffffff;
+}
