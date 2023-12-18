@@ -30,3 +30,7 @@ I tested for functionality, responsiveness, and security.
 Phase 6
 I ensured my application was successfully hosted via render and functioning correctly.
 The URL Address for this project is https://poa-ngi7.onrender.com
+
+
+Extension Capabilities
+Website is broken down into individual apps so each app could be used in different websites.
