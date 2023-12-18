@@ -115,9 +115,9 @@ a.text-body{
 }
 
 .list-group-item-light:hover{
-  color: #ffffff;
   text-decoration: underline;
 }
+
 
 .btn-primary {
   color: #ffffff;
