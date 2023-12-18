@@ -18,14 +18,7 @@ EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS'] #App Password set from gmail, Sto
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-8@9md)c*4v!t$!4q$%olfb53y_k4d5#p7-(1gydk(!zwkwpn1@'
 SECRET_KEY = os.getenv('DJANOG_SECRET_KEY', get_random_secret_key())   
-
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
