@@ -3,12 +3,12 @@
 
 {% block content %}
 <div class="col-12 col-md-4 col-lg-4">
-<h2>{{ magazine.title }}</h2>
-<img src="{{ magazine.cover_image.url }}" href="{{ magazine.pdf_file.url }}">
-</div>
+    <h2>{{ magazine.title }}</h2>
+    <img src="{{ magazine.cover_image.url }}" alt="{{ magazine.title }}">
+    <p>{{ magazine.description }}</p>
+    <a href="{{ magazine.pdf_file.url }}" target="_blank">View PDF</a>
+<br>
 {% endblock %}
-
-
 
 
 
