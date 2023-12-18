@@ -114,11 +114,6 @@ a.text-body{
   background-color: #b5a168;
 }
 
-.list-group-item-light:hover{
-  text-decoration: underline;
-}
-
-
 .btn-primary {
   color: #ffffff;
   background-color: #b5a168;
@@ -129,4 +124,4 @@ a {
   color: #ffffff;}
 
 a:hover {
-    color: #b5a168;}
+  text-decoration: underline;}
