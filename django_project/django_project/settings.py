@@ -11,8 +11,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ['EMAIL_USER'] # Login email address, Stored as an environment varaible
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS'] #App Password set from gmail, Stored as an environment varaible
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS') #App Password set from gmail, Stored as an environment varaible
-#EMAIL_HOST_USER = os.environ.get('EMAIL_USER') # Login email address, Stored as an environment varaible
+##EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS') #App Password set from gmail, Stored as an environment varaible
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER') # Login email address, Stored as an environment varaible
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -116,8 +116,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / 'staticfiles']
+STATIC_ROOT = BASE_DIR / "static"
 
 
 
